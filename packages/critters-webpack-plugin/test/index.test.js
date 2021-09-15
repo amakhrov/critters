@@ -89,7 +89,8 @@ describe('External CSS', () => {
     expect(output.html).toMatchSnapshot();
   });
 
-  it('should prune external sheet', async () => {
+  // not implemented with dropcss
+  it.skip('should prune external sheet', async () => {
     const externalCss = await readFile('fixtures/external/dist/main.css');
     expect(externalCss).toMatch(/\.extra-style\s*\{/);
     expect(externalCss).toMatchSnapshot();
@@ -129,7 +130,8 @@ describe('publicPath', () => {
     expect(output.html).toMatchSnapshot();
   });
 
-  it('should prune external sheet', async () => {
+  // not implemented with dropcss
+  it.skip('should prune external sheet', async () => {
     const externalCss = await readFile('fixtures/external/dist/main.css');
     expect(externalCss).toMatch(/\.extra-style\s*\{/);
     expect(externalCss).toMatchSnapshot();
@@ -189,7 +191,8 @@ describe('options', () => {
       expect(output.html).not.toMatch(/@keyframes not-present/);
     });
 
-    it('keyframes=all', async () => {
+    // not supported by dropcss
+    it.skip('keyframes=all', async () => {
       const output = await compileToHtml('keyframes', configure, {
         keyframes: 'all'
       });
@@ -197,7 +200,8 @@ describe('options', () => {
       expect(output.html).toMatch(/@keyframes not-present/);
     });
 
-    it('keyframes=none', async () => {
+    // not supported by dropcss
+    it.skip('keyframes=none', async () => {
       const output = await compileToHtml('keyframes', configure, {
         keyframes: 'none'
       });

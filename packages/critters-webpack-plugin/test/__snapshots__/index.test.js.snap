@@ -3,65 +3,21 @@
 exports[`External CSS should match snapshot 1`] = `
 "<!DOCTYPE html><html><head>
     <title>External CSS Demo</title>
-  <style>:root {
-  font-size: 10px;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  padding-left: 11em;
+  <style>:root{font-size: 10px;}html{height: 100%;}body{padding-left: 11em;
   font-family: 'Times New Roman', times, serif;
   color: purple;
-  background-color: #d8da3d;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-
-ul.navbar {
-  list-style-type: none;
+  background-color: #d8da3d;}*,:after,:before{box-sizing: inherit}ul.navbar{list-style-type: none;
   padding: 0;
   margin: 0;
   position: absolute;
   top: 2em;
   left: 1em;
-  width: 9em;
-}
-
-h1 {
-  font-family: helvetica, arial, sans-serif;
-}
-
-ul.navbar li {
-  background: white;
+  width: 9em;}h1{font-family: helvetica, arial, sans-serif;}ul.navbar li{background: white;
   margin: 0.5em 0;
   padding: 0.3em;
-  border-right: 1em solid black;
-}
-
-ul.navbar a {
-  text-decoration: none;
-}
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
-}
-
-footer {
-  margin-top: 1em;
+  border-right: 1em solid black;}ul.navbar a{text-decoration: none;}a:link{color: blue;}a:visited{color: purple;}footer{margin-top: 1em;
   padding-top: 1em;
-  border-top: thin dotted;
-}</style><link href=\\"main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
+  border-top: thin dotted;}</style><link href=\\"main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
   <body>
     <ul class=\\"navbar\\">
       <li>
@@ -85,76 +41,26 @@ exports[`External CSS should prune external sheet 1`] = `
 }"
 `;
 
-exports[`Inline <style> pruning should remove entire unused stylesheets 1`] = `
-"h1 {
-  color: green;
-}"
-`;
+exports[`Inline <style> pruning should remove entire unused stylesheets 1`] = `"h1{color: green;}"`;
 
 exports[`Inline <style> pruning should remove unused rules 1`] = `
 "<!DOCTYPE html><html><head>
     <title>Basic Demo</title>
-    <style>body {
-  padding-left: 11em;
-  font-family: \\"Times New Roman\\", times, serif;
-  color: purple;
-  background-color: #d8da3d;
-}
-
-ul.navbar {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 2em;
-  left: 1em;
-  width: 9em;
-}
-
-h1 {
-  font-family: helvetica, arial, sans-serif;
-}
-
-ul.navbar li {
-  background: white;
-  margin: 0.5em 0;
-  padding: 0.3em;
-  border-right: 1em solid black;
-}
-
-ul.navbar a {
-  text-decoration: none;
-}
-
-ul.navbar:not(.hidden) li:hover a {
-  color: black;
-}
-
-ul.navbar:not(:hover) li:hover a {
-  color: black;
-}
-
-ul.navbar li:hover a {
-  color: red;
-}
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
-}
-
-footer {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-top: thin dotted;
-}
-
-.clazz\\\\:colon {
-  color: green;
-}</style>
+    <style>body{padding-left: 11em;
+        font-family: \\"Times New Roman\\", times, serif;
+        color: purple;
+        background-color: #d8da3d;}ul.navbar{list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 2em;
+        left: 1em;
+        width: 9em;}h1{font-family: helvetica, arial, sans-serif;}ul.navbar li{background: white;
+        margin: 0.5em 0;
+        padding: 0.3em;
+        border-right: 1em solid black;}ul.navbar a{text-decoration: none;}ul.navbar:not(.hidden) li:hover a{color: black;}ul.navbar:not(:hover) li:hover a{color: black;}ul.navbar li:hover a{color: red;}a:link{color: blue;}a:visited{color: purple;}footer{margin-top: 1em;
+        padding-top: 1em;
+        border-top: thin dotted;}.clazz\\\\:colon{color: green;}</style>
   </head>
   <body>
     <ul class=\\"navbar clazz:colon\\">
@@ -176,65 +82,21 @@ footer {
 exports[`options { async:true } should match snapshot 1`] = `
 "<!DOCTYPE html><html><head>
     <title>External CSS Demo</title>
-  <style>:root {
-  font-size: 10px;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  padding-left: 11em;
+  <style>:root{font-size: 10px;}html{height: 100%;}body{padding-left: 11em;
   font-family: 'Times New Roman', times, serif;
   color: purple;
-  background-color: #d8da3d;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-
-ul.navbar {
-  list-style-type: none;
+  background-color: #d8da3d;}*,:after,:before{box-sizing: inherit}ul.navbar{list-style-type: none;
   padding: 0;
   margin: 0;
   position: absolute;
   top: 2em;
   left: 1em;
-  width: 9em;
-}
-
-h1 {
-  font-family: helvetica, arial, sans-serif;
-}
-
-ul.navbar li {
-  background: white;
+  width: 9em;}h1{font-family: helvetica, arial, sans-serif;}ul.navbar li{background: white;
   margin: 0.5em 0;
   padding: 0.3em;
-  border-right: 1em solid black;
-}
-
-ul.navbar a {
-  text-decoration: none;
-}
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
-}
-
-footer {
-  margin-top: 1em;
+  border-right: 1em solid black;}ul.navbar a{text-decoration: none;}a:link{color: blue;}a:visited{color: purple;}footer{margin-top: 1em;
   padding-top: 1em;
-  border-top: thin dotted;
-}</style><link href=\\"main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
+  border-top: thin dotted;}</style><link href=\\"main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
   <body>
     <ul class=\\"navbar\\">
       <li>
@@ -255,65 +117,21 @@ footer {
 exports[`publicPath should match snapshot 1`] = `
 "<!DOCTYPE html><html><head>
     <title>External CSS Demo</title>
-  <style>:root {
-  font-size: 10px;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  padding-left: 11em;
+  <style>:root{font-size: 10px;}html{height: 100%;}body{padding-left: 11em;
   font-family: 'Times New Roman', times, serif;
   color: purple;
-  background-color: #d8da3d;
-}
-
-*,
-:after,
-:before {
-  box-sizing: inherit;
-}
-
-ul.navbar {
-  list-style-type: none;
+  background-color: #d8da3d;}*,:after,:before{box-sizing: inherit}ul.navbar{list-style-type: none;
   padding: 0;
   margin: 0;
   position: absolute;
   top: 2em;
   left: 1em;
-  width: 9em;
-}
-
-h1 {
-  font-family: helvetica, arial, sans-serif;
-}
-
-ul.navbar li {
-  background: white;
+  width: 9em;}h1{font-family: helvetica, arial, sans-serif;}ul.navbar li{background: white;
   margin: 0.5em 0;
   padding: 0.3em;
-  border-right: 1em solid black;
-}
-
-ul.navbar a {
-  text-decoration: none;
-}
-
-a:link {
-  color: blue;
-}
-
-a:visited {
-  color: purple;
-}
-
-footer {
-  margin-top: 1em;
+  border-right: 1em solid black;}ul.navbar a{text-decoration: none;}a:link{color: blue;}a:visited{color: purple;}footer{margin-top: 1em;
   padding-top: 1em;
-  border-top: thin dotted;
-}</style><link href=\\"/_public/main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
+  border-top: thin dotted;}</style><link href=\\"/_public/main.css\\" rel=\\"preload\\" as=\\"style\\"></head>
   <body>
     <ul class=\\"navbar\\">
       <li>
